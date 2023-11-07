@@ -1,7 +1,8 @@
-POST https://cold-fog-7792.fly.dev/api/persons
+# POST https://cold-fog-7792.fly.dev/api/persons
+POST http://localhost:3001/api/persons
 Content-Type: application/json
 
 {
-  "name": "Monkey Man",
-  "number": "431-123-1581"
+  "name": "Testing Man",
+  "number": "352-124-6262"
 }
