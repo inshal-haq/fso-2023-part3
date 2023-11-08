@@ -1,1 +1,2 @@
-DELETE https://cold-fog-7792.fly.dev/api/persons/2
+# DELETE https://cold-fog-7792.fly.dev/api/persons/2
+DELETE http://localhost:3001/api/persons/65498f4308c0643d1514af62
