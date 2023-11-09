@@ -7,7 +7,7 @@ const url = process.env.MONGODB_URI
 console.log('connecting to', url)
 
 mongoose.connect(url)
-  .then(result => {
+  .then(() => {
     console.log('connected to MongoDB')
   })
   .catch(error => {
@@ -16,7 +16,7 @@ mongoose.connect(url)
 
 
 // if (process.argv.length !== 2 && process.argv.length !== 4) {
-//   console.log(`Please input 2 arguments to view phonebook, 
+//   console.log(`Please input 2 arguments to view phonebook,
 // or 4 arguments to add a new person`)
 
 //   process.exit(1)
@@ -66,7 +66,7 @@ personSchema.set('toJSON', {
 //     name,
 //     number,
 //   })
-  
+
 //   person.save().then(result => {
 //     console.log(`added ${name} number ${number} to phonebook`)
 //     mongoose.connection.close()

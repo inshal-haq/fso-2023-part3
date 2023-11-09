@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build:ui": "rm -rf dist && cd /Users/inshalhaq/repos/fso-2023/part2/phonebook && npm run build && cp -r dist /Users/inshalhaq/repos/fso-2023-part3",
-    "start": "node index.js",
     "dev": "nodemon index.js",
+    "lint": "eslint .",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Inshal Haq",
@@ -20,6 +21,7 @@
   },
   "devDependencies": {
     "@flydotio/dockerfile": "^0.4.10",
+    "eslint": "^8.53.0",
     "nodemon": "^3.0.1"
   }
 }
